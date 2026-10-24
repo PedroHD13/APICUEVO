@@ -1,7 +1,5 @@
-.historia{background:var(--crema-calida)}
-.historia__grid{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,6vw,4.5rem);align-items:center}
-.historia p{max-width:58ch}
-.historia figure{margin:0}
-.historia img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:20px}
-.historia figcaption{margin-top:.75rem;font-size:.9rem;color:var(--tierra)}
-@media (max-width:860px){.historia__grid{grid-template-columns:1fr}}
+.hitos{list-style:none;margin:1.75rem 0;padding:0 0 0 1.5rem;border-left:4px solid var(--miel);display:grid;gap:1.25rem}
+.hitos li{position:relative}
+.hitos li::before{content:"";position:absolute;left:calc(-1.5rem - 10px);top:.55rem;width:16px;height:16px;background:var(--morado);border:3px solid var(--crema-calida);border-radius:50%}
+.hitos b{font:800 1.5rem/1 var(--f-titulo);color:var(--morado)}
+.hitos p{margin:.25rem 0 0;max-width:52ch}
