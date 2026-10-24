@@ -1,0 +1,13 @@
+.preguntas{background:var(--crema-calida)}
+.preguntas__grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(2rem,6vw,4.5rem);align-items:start}
+.preguntas__titulo{font:800 clamp(2.3rem,5vw,3.8rem)/1 var(--f-titulo);letter-spacing:-.03em;color:var(--morado);margin-bottom:1.25rem}
+.preguntas__titulo span{color:var(--tierra)}
+.preguntas__grid>div:first-child p:last-child{max-width:44ch;color:var(--tierra)}
+.faq{display:grid;gap:.65rem}
+details{background:var(--crema);border:1px solid rgb(75 29 74/.14);border-radius:16px}
+summary{list-style:none;cursor:pointer;position:relative;padding:1.1rem 3.2rem 1.1rem 1.25rem;font:500 1.1rem var(--f-titulo);color:var(--morado)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";position:absolute;right:1.4rem;top:50%;width:.7rem;height:.7rem;margin-top:-.55rem;border-right:3px solid var(--miel);border-bottom:3px solid var(--miel);transform:rotate(45deg)}
+details[open] summary::after{transform:rotate(-135deg);margin-top:-.2rem}
+details p{margin:0;padding:0 1.25rem 1.2rem;color:var(--tierra);font-size:.98rem;max-width:62ch}
+@media (max-width:860px){.preguntas__grid{grid-template-columns:1fr}}

@@ -1,0 +1,12 @@
+.tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.tarjeta{background:#fff;border:1px solid rgb(75 29 74/.12);border-radius:20px;overflow:hidden}
+.tarjeta img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--crema-calida)}
+.tarjeta div{padding:1.25rem 1.25rem 1.4rem}
+.tarjeta h3{color:var(--morado);margin-bottom:.25rem}
+.tarjeta__medida{font-weight:600;color:var(--tierra);margin-bottom:.6rem}
+.tarjeta p{font-size:.95rem}
+.precio{font:800 1.6rem var(--f-titulo);color:var(--morado);margin:.75rem 0 0}
+.precio small{font-size:.8rem;font-family:var(--f-texto);font-weight:600}
+.nota{margin-top:1.5rem;font-size:.88rem;color:var(--tierra)}
+@media (max-width:860px){.tarjetas{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.tarjetas{grid-template-columns:1fr}}

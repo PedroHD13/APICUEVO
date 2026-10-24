@@ -1,0 +1,17 @@
+/* Variables de diseño. Colores = guía de marca de Apicuevo. */
+:root{
+  --morado:#4B1D4A;          /* Morado guaraní (principal) */
+  --miel:#F4B400;            /* Miel (acentos) */
+  --tierra:#6B4B2A;          /* Tierra (apoyo) */
+  --crema:#FAF7ED;           /* Crema (fondos) */
+  --morado-profundo:#2E102D; /* derivado: nav, proceso, pie */
+  --crema-calida:#F0E6CF;    /* derivado: paneles alternos */
+
+  --f-titulo:"Bricolage Grotesque","Arial Black",system-ui,sans-serif;
+  --f-texto:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  --ancho:1160px;
+  --margen:max(20px,env(safe-area-inset-left,0px));
+  --espacio-seccion:clamp(4.5rem,9vw,7.5rem);
+  --escalon:polygon(0 12%,6% 12%,6% 6%,12% 6%,12% 0,100% 0,100% 88%,94% 88%,94% 94%,88% 94%,88% 100%,0 100%);
+}
