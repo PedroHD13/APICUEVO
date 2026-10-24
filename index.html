@@ -1,215 +1,291 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Apicuevo · Miel de abeja multifloral de Cuevo, Bolivia</title>
-  <meta name="description" content="Miel de abeja multifloral cosechada a mano en Cuevo, Chaco cruceño. Sin calentar, sin mezclas y sin aditivos.">
+  <meta name="description"
+    content="Miel de abeja multifloral cosechada a mano en Cuevo, Chaco cruceño. Sin calentar, sin mezclas y sin aditivos.">
   <meta name="theme-color" content="#4B1D4A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/nav.js" defer></script>
   <script src="js/floracion.js" defer></script>
 </head>
+
 <body>
 
-<header class="nav">
-  <div class="contenedor nav__fila">
-    <a href="#inicio" aria-label="Apicuevo, inicio"><img class="nav__logo" src="assets/img/logo-horizontal.png" alt="Apicuevo" width="600" height="160"></a>
-    <button class="nav__boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
-    <nav id="menu" class="nav__menu" data-abierto="false" aria-label="Principal">
-      <a href="#miel">Nuestra miel</a>
-      <a href="#historia">Historia</a>
-      <a href="#proceso">Cómo la hacemos</a>
-      <a href="#presentaciones">Presentaciones</a>
-      <a href="#preguntas">Preguntas</a>
-      <a class="boton boton--miel" href="#contacto">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-<section class="hero" id="inicio">
-  <div class="contenedor hero__grid">
-    <div>
-      <p class="hero__lugar">Cuevo, Chaco cruceño, Bolivia</p>
-      <h1>Miel que sabe al monte en flor.</h1>
-      <p class="hero__texto">Miel de abeja multifloral, cosechada a mano en Cuevo. Sin calentar, sin mezclas y sin nada añadido: solo lo que las abejas juntan de las flores del Chaco.</p>
-      <div class="hero__acciones">
-        <a class="boton boton--miel" href="#presentaciones">Ver presentaciones</a>
-        <a class="boton boton--borde" href="#proceso">Cómo la hacemos</a>
-      </div>
-      <ul class="hero__datos">
-        <li>500 g por frasco</li>
-        <li>100 % natural, sin aditivos</li>
-        <li>Néctar de flores nativas</li>
-      </ul>
+  <header class="nav">
+    <div class="contenedor nav__fila">
+      <a href="#inicio" aria-label="Apicuevo, inicio"><img class="nav__logo" src="assets/img/logo-horizontal.png"
+          alt="Apicuevo" width="600" height="160"></a>
+      <button class="nav__boton" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
+      <nav id="menu" class="nav__menu" data-abierto="false" aria-label="Principal">
+        <a href="#miel">Nuestra miel</a>
+        <a href="#historia">Historia</a>
+        <a href="#proceso">Cómo la hacemos</a>
+        <a href="#presentaciones">Presentaciones</a>
+        <a href="#preguntas">Preguntas</a>
+        <a class="boton boton--miel" href="#contacto">Contacto</a>
+      </nav>
     </div>
-    <figure class="hero__arte">
-      <img src="assets/img/hero-frascos.jpg" alt="Tres frascos de miel Apicuevo sobre una mesa de madera, con panal y flores silvestres" width="1024" height="550">
-    </figure>
-  </div>
-  <div class="hero__goteo" aria-hidden="true">
-    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="currentColor" d="M0 90V38c40 0 52 22 70 22s22-30 58-30 34 44 58 44 18-36 62-36h96c30 0 30 18 52 18s26-36 70-36h120c34 0 36 52 60 52s26-52 56-52h110c26 0 28 26 50 26s30-26 60-26h150c30 0 34 40 56 40s22-40 54-40h120c40 0 44 30 66 30s24-30 62-30h60V90z"/></svg>
-    <span class="gota" style="left:13.4%;animation-delay:.6s"></span>
-    <span class="gota" style="left:41.8%;animation-delay:1.2s"></span>
-    <span class="gota" style="left:62.1%;animation-delay:1.8s"></span>
-    <span class="gota" style="left:86.2%;animation-delay:.9s"></span>
-  </div>
-</section>
+  </header>
 
-<section class="miel" id="miel">
-  <div class="contenedor miel__grid">
-    <div>
-      <p class="nombre" aria-label="Api y Cuevo"><span>Api</span><span>cuevo</span></p>
-      <dl class="nombre__nota">
-        <dt>Api</dt><dd>De <i>apis</i>, la abeja.</dd>
-        <dt>Cuevo</dt><dd>Nuestro pueblo, en la provincia Cordillera de Santa Cruz.</dd>
-      </dl>
-    </div>
-    <div>
-      <h2>Cada frasco guarda una temporada del Chaco.</h2>
-      <p class="entrada">Es multifloral porque las abejas no eligen una sola flor: visitan lo que el monte va abriendo, de la primavera al verano. Por eso el color y el aroma cambian un poco de una cosecha a otra.</p>
-
-      <div class="floracion" id="floracion">
-        <div class="floracion__cabeza">
-          <h3>Calendario de floración</h3>
-          <small>Meses aproximados, varían con las lluvias</small>
-        </div>
-        <div class="chips" id="chips" role="group" aria-label="Elegir flor">
-          <button class="chip" type="button" data-f="all" aria-pressed="true">Todas</button>
-        </div>
-        <div class="cal"><div class="cal__grilla" id="cal"></div></div>
-        <div class="floracion__detalle" aria-live="polite">
-          <b id="fNombre">Todas las flores</b>
-          <p id="fTexto">Toca una flor para ver cuándo florece y qué aporta a la miel. La franja marrón marca la temporada de cosecha.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="historia" id="historia">
-  <div class="contenedor historia__grid">
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__fondo" aria-hidden="true"><img src="assets/img/hero-frascos.webp" alt="" width="1024"
+          height="572" fetchpriority="high"></div>
+      <div class="contenedor hero__grid">
         <div>
-      <h2>Una asociación de apicultores de Cuevo.</h2>
-      <p class="entrada">Apicuevo es la Asociación de Apicultores de Cuevo, una organización de productores de miel del municipio de Cuevo, en el Chaco boliviano.</p>
+          <p class="hero__lugar">Cuevo, Chaco cruceño, Bolivia</p>
+          <h1>Miel que sabe al monte en flor.</h1>
+          <p class="hero__texto">Miel de abeja multifloral, cosechada a mano en Cuevo. Sin calentar, sin mezclas y sin
+            nada añadido: solo lo que las abejas juntan de las flores del Chaco.</p>
+          <div class="hero__acciones">
+            <a class="boton boton--miel" href="#presentaciones">Ver presentaciones</a>
+            <a class="boton boton--borde" href="#proceso">Cómo la hacemos</a>
+          </div>
+          <ul class="hero__datos">
+            <li>500 g por frasco</li>
+            <li>100 % natural, sin aditivos</li>
+            <li>Néctar de flores nativas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__goteo" aria-hidden="true">
+        <svg viewBox="0 0 1440 90" preserveAspectRatio="none">
+          <path fill="currentColor"
+            d="M0 90V38c40 0 52 22 70 22s22-30 58-30 34 44 58 44 18-36 62-36h96c30 0 30 18 52 18s26-36 70-36h120c34 0 36 52 60 52s26-52 56-52h110c26 0 28 26 50 26s30-26 60-26h150c30 0 34 40 56 40s22-40 54-40h120c40 0 44 30 66 30s24-30 62-30h60V90z" />
+        </svg>
+        <span class="gota" style="left:13.4%;animation-delay:.6s"></span>
+        <span class="gota" style="left:41.8%;animation-delay:1.2s"></span>
+        <span class="gota" style="left:62.1%;animation-delay:1.8s"></span>
+        <span class="gota" style="left:86.2%;animation-delay:.9s"></span>
+      </div>
+    </section>
 
-      <ol class="hitos">
-        <li>
-          <b>2006</b>
-          <p>Nace Apicuevo para mejorar la producción y la venta de miel.</p>
-        </li>
-        <li>
-          <b>2011</b>
-          <p>Obtiene su personería jurídica mediante la Resolución N° 320/2011.</p>
-        </li>
-        <li>
-          <b>2026</b>
-          <p>Participa en iniciativas de digitalización junto a la Fundación ACLO y Manos Unidas, y en procesos con el Banco Mundial bajo el programa Alianzas Rurales (PAR III).</p>
-        </li>
-      </ol>
+    <section class="miel" id="miel">
+      <div class="contenedor miel__grid">
+        <div>
+          <p class="nombre" aria-label="Api y Cuevo"><span>Api</span><span>cuevo</span></p>
+          <dl class="nombre__nota">
+            <dt>Api</dt>
+            <dd>De <i>apis</i>, la abeja.</dd>
+            <dt>Cuevo</dt>
+            <dd>Nuestro pueblo, en la provincia Cordillera de Santa Cruz.</dd>
+          </dl>
+        </div>
+        <div>
+          <h2>Cada frasco guarda una temporada del Chaco.</h2>
+          <p class="entrada">Es multifloral porque las abejas no eligen una sola flor: visitan lo que el monte va
+            abriendo, de la primavera al verano. Por eso el color y el aroma cambian un poco de una cosecha a otra.</p>
 
-      <p>Hoy reúne a familias y unidades productivas locales de la región, como Apícola La Penca.</p>
-      <p>Las grecas de nuestra etiqueta vienen de los tejidos de la región. La espiral escalonada es el camino que hace la abeja entre la flor y la colmena.</p>
-    </div>
-    <figure>
-      <img src="assets/img/identidad-merch.jpeg" alt="Camisetas, afiche y papel con las grecas, abejas y flores de la marca Apicuevo" width="1024" height="572" loading="lazy">
-      <figcaption>Naturaleza, trabajo y comunidad: la marca Apicuevo.</figcaption>
-    </figure>
-  </div>
-</section>
+          <div class="floracion" id="floracion">
+            <div class="floracion__cabeza">
+              <h3>Calendario de floración</h3>
+              <small>Meses aproximados, varían con las lluvias</small>
+            </div>
+            <div class="chips" id="chips" role="group" aria-label="Elegir flor">
+              <button class="chip" type="button" data-f="all" aria-pressed="true">Todas</button>
+            </div>
+            <div class="cal">
+              <div class="cal__grilla" id="cal"></div>
+            </div>
+            <div class="floracion__detalle" aria-live="polite">
+              <b id="fNombre">Todas las flores</b>
+              <p id="fTexto">Toca una flor para ver cuándo florece y qué aporta a la miel. La franja marrón marca la
+                temporada de cosecha.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="proceso" id="proceso">
-  <div class="contenedor">
-    <div class="proceso__cabeza">
-      <h2>Del monte a tu frasco, en cinco pasos.</h2>
-      <p class="entrada">No calentamos la miel para filtrarla más rápido. Así conserva su aroma, sus enzimas y el polen de las flores que la hicieron.</p>
-    </div>
-    <ol class="pasos">
-      <li><h3>Floración</h3><p>Las colmenas se ubican cerca del monte nativo, lejos de cultivos fumigados.</p></li>
-      <li><h3>Pecoreo</h3><p>Las abejas recogen néctar y polen durante semanas y lo convierten en miel dentro del panal.</p></li>
-      <li><h3>Cosecha</h3><p>Solo sacamos los marcos operculados: celdas que las abejas ya sellaron porque la miel está madura.</p></li>
-      <li><h3>Extracción en frío</h3><p>Se desopercula, se centrifuga y se filtra por malla a temperatura ambiente.</p></li>
-      <li><h3>Envasado y lote</h3><p>Cada frasco lleva su número de lote y fecha, para saber de qué cosecha viene.</p></li>
-    </ol>
-    <dl class="cifras">
-      <div><dt>&lt; 20 %</dt><dd>de humedad: el límite que fija la norma Codex para que la miel no fermente.</dd></div>
-      <div><dt>&lt; 40 °C</dt><dd>Nunca la calentamos por encima de esta temperatura.</dd></div>
-      <div><dt>0</dt><dd>azúcares, jarabes o conservantes añadidos.</dd></div>
-    </dl>
-  </div>
-</section>
+    <section class="historia" id="historia">
+      <div class="contenedor historia__grid">
+        <div>
+          <h2>Una asociación de apicultores de Cuevo.</h2>
+          <p class="entrada">Apicuevo es la Asociación de Apicultores de Cuevo, una organización de productores de miel
+            del municipio de Cuevo, en el Chaco boliviano.</p>
 
-<section class="presentaciones" id="presentaciones">
-  <div class="contenedor">
-    <h2>La misma miel, tres maneras de llevarla.</h2>
-    <div class="tarjetas">
-      <article class="tarjeta">
-        <img src="assets/img/frasco-natural.webp" alt="Frasco Edición Natural de Apicuevo" loading="lazy">
-        <div><h3>Edición Natural</h3><p class="tarjeta__medida">500 g</p>
-        <p>Frasco con tapa de papel kraft atada con pita y cuchara de madera de regalo.</p>
-        <p class="precio"><small>Bs</small> 60</p></div>
-      </article>
-      <article class="tarjeta">
-        <img src="assets/img/frasco-clasica.webp" alt="Frasco Edición Clásica de Apicuevo" loading="lazy">
-        <div><h3>Edición Clásica</h3><p class="tarjeta__medida">500 g</p>
-        <p>Nuestra miel de todos los días, en frasco de vidrio con tapa metálica.</p>
-        <p class="precio"><small>Bs</small> 50</p></div>
-      </article>
-      <article class="tarjeta">
-        <img src="assets/img/frasco-reserva.webp" alt="Frasco Edición Reserva de Apicuevo" loading="lazy">
-        <div><h3>Edición Reserva</h3><p class="tarjeta__medida">500 g</p>
-        <p>Miel de la mejor cosecha del año, con faja de seguridad numerada.</p>
-        <p class="precio"><small>Bs</small> 70</p></div>
-      </article>
-    </div>
-    <p class="nota">Precios de referencia en bolivianos. Para pedir, escríbenos por WhatsApp.</p>
-  </div>
-</section>
+          <ol class="hitos">
+            <li>
+              <b>2006</b>
+              <p>Nace Apicuevo para mejorar la producción y la venta de miel.</p>
+            </li>
+            <li>
+              <b>2011</b>
+              <p>Obtiene su personería jurídica mediante la Resolución N° 320/2011.</p>
+            </li>
+            <li>
+              <b>2026</b>
+              <p>Participa en iniciativas de digitalización junto a la Fundación ACLO y Manos Unidas, y en procesos con
+                el Banco Mundial bajo el programa Alianzas Rurales (PAR III).</p>
+            </li>
+          </ol>
 
-<section class="preguntas" id="preguntas">
-  <div class="contenedor preguntas__grid">
-    <div>
-      <p class="preguntas__titulo">¿Se puso dura? <span>Es buena señal.</span></p>
-      <p>La miel pura cristaliza con el tiempo y con el frío. Es la glucosa ordenándose en cristales, no azúcar agregada. Las mieles adulteradas con jarabe casi nunca lo hacen.</p>
-    </div>
-    <div class="faq">
-      <details open><summary>¿Cómo la vuelvo líquida otra vez?</summary><p>Pon el frasco destapado en baño maría con agua tibia, sin pasar de 40 °C, y revuelve de vez en cuando. No la metas al microondas: el calor fuerte le quita aroma y enzimas.</p></details>
-      <details><summary>¿Cómo se guarda?</summary><p>Bien cerrada, a temperatura ambiente y lejos del sol y la humedad. En la heladera se cristaliza más rápido. Usa siempre una cuchara seca.</p></details>
-      <details><summary>¿Pueden comerla los bebés?</summary><p>No se recomienda dar miel a niños menores de 1 año, porque puede causar botulismo infantil. A partir del año no hay problema.</p></details>
-      <details><summary>¿Cuánto dura?</summary><p>Bien guardada, la miel se conserva mucho tiempo. En cada frasco está la fecha de consumo preferente y el número de lote de su cosecha.</p></details>
-      <details><summary>¿Por qué cambia de color entre frascos?</summary><p>Porque es multifloral. Según las flores que abrieron esa temporada, puede salir más clara y suave o más oscura e intensa. Las dos son la misma miel pura.</p></details>
-    </div>
-  </div>
-</section>
-</main>
+          <p>Hoy reúne a familias y unidades productivas locales de la región, como Apícola La Penca.</p>
+          <p>Las grecas de nuestra etiqueta vienen de los tejidos de la región. La espiral escalonada es el camino que
+            hace la abeja entre la flor y la colmena.</p>
+        </div>
+        <figure>
+          <img src="assets/img/identidad-merch.jpeg"
+            alt="Camisetas, afiche y papel con las grecas, abejas y flores de la marca Apicuevo" width="1024"
+            height="572" loading="lazy">
+          <figcaption>Naturaleza, trabajo y comunidad: la marca Apicuevo.</figcaption>
+        </figure>
+      </div>
+    </section>
 
-<footer class="pie" id="contacto">
-  <div class="contenedor pie__grid">
-    <div><img src="assets/img/logo-vertical.png" alt="Apicuevo, miel de abeja multifloral" width="400" height="260" loading="lazy"></div>
-    <div>
-      <h4>Pedidos</h4>
-      <ul>
-        <!-- TODO (equipo): poner el número real de WhatsApp -->
-        <li><a href="https://wa.me/59170000000">WhatsApp +591 700 00000</a></li>
-        <li>Instagram y Facebook: @apicuevo</li>
-        <li>Cuevo, provincia Cordillera, Santa Cruz, Bolivia</li>
-      </ul>
+    <section class="proceso" id="proceso">
+      <div class="contenedor">
+        <div class="proceso__cabeza">
+          <h2>Del monte a tu frasco, en cinco pasos.</h2>
+          <p class="entrada">No calentamos la miel para filtrarla más rápido. Así conserva su aroma, sus enzimas y el
+            polen de las flores que la hicieron.</p>
+        </div>
+        <ol class="pasos">
+          <li>
+            <h3>Floración</h3>
+            <p>Las colmenas se ubican cerca del monte nativo, lejos de cultivos fumigados.</p>
+          </li>
+          <li>
+            <h3>Pecoreo</h3>
+            <p>Las abejas recogen néctar y polen durante semanas y lo convierten en miel dentro del panal.</p>
+          </li>
+          <li>
+            <h3>Cosecha</h3>
+            <p>Solo sacamos los marcos operculados: celdas que las abejas ya sellaron porque la miel está madura.</p>
+          </li>
+          <li>
+            <h3>Extracción en frío</h3>
+            <p>Se desopercula, se centrifuga y se filtra por malla a temperatura ambiente.</p>
+          </li>
+          <li>
+            <h3>Envasado y lote</h3>
+            <p>Cada frasco lleva su número de lote y fecha, para saber de qué cosecha viene.</p>
+          </li>
+        </ol>
+        <dl class="cifras">
+          <div>
+            <dt>&lt; 20 %</dt>
+            <dd>de humedad: el límite que fija la norma Codex para que la miel no fermente.</dd>
+          </div>
+          <div>
+            <dt>&lt; 40 °C</dt>
+            <dd>Nunca la calentamos por encima de esta temperatura.</dd>
+          </div>
+          <div>
+            <dt>0</dt>
+            <dd>azúcares, jarabes o conservantes añadidos.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="presentaciones" id="presentaciones">
+      <div class="contenedor">
+        <h2>La misma miel, tres maneras de llevarla.</h2>
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <img src="assets/img/frasco-natural.webp" alt="Frasco Edición Natural de Apicuevo" loading="lazy">
+            <div>
+              <h3>Edición Natural</h3>
+              <p class="tarjeta__medida">500 g</p>
+              <p>Frasco con tapa de papel kraft atada con pita y cuchara de madera de regalo.</p>
+              <p class="precio"><small>Bs</small> 60</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="assets/img/frasco-clasica.webp" alt="Frasco Edición Clásica de Apicuevo" loading="lazy">
+            <div>
+              <h3>Edición Clásica</h3>
+              <p class="tarjeta__medida">500 g</p>
+              <p>Nuestra miel de todos los días, en frasco de vidrio con tapa metálica.</p>
+              <p class="precio"><small>Bs</small> 50</p>
+            </div>
+          </article>
+          <article class="tarjeta">
+            <img src="assets/img/frasco-reserva.webp" alt="Frasco Edición Reserva de Apicuevo" loading="lazy">
+            <div>
+              <h3>Edición Reserva</h3>
+              <p class="tarjeta__medida">500 g</p>
+              <p>Miel de la mejor cosecha del año, con faja de seguridad numerada.</p>
+              <p class="precio"><small>Bs</small> 70</p>
+            </div>
+          </article>
+        </div>
+        <p class="nota">Precios de referencia en bolivianos. Para pedir, escríbenos por WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="preguntas" id="preguntas">
+      <div class="contenedor preguntas__grid">
+        <div>
+          <p class="preguntas__titulo">¿Se puso dura? <span>Es buena señal.</span></p>
+          <p>La miel pura cristaliza con el tiempo y con el frío. Es la glucosa ordenándose en cristales, no azúcar
+            agregada. Las mieles adulteradas con jarabe casi nunca lo hacen.</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>¿Cómo la vuelvo líquida otra vez?</summary>
+            <p>Pon el frasco destapado en baño maría con agua tibia, sin pasar de 40 °C, y revuelve de vez en cuando. No
+              la metas al microondas: el calor fuerte le quita aroma y enzimas.</p>
+          </details>
+          <details>
+            <summary>¿Cómo se guarda?</summary>
+            <p>Bien cerrada, a temperatura ambiente y lejos del sol y la humedad. En la heladera se cristaliza más
+              rápido. Usa siempre una cuchara seca.</p>
+          </details>
+          <details>
+            <summary>¿Pueden comerla los bebés?</summary>
+            <p>No se recomienda dar miel a niños menores de 1 año, porque puede causar botulismo infantil. A partir del
+              año no hay problema.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto dura?</summary>
+            <p>Bien guardada, la miel se conserva mucho tiempo. En cada frasco está la fecha de consumo preferente y el
+              número de lote de su cosecha.</p>
+          </details>
+          <details>
+            <summary>¿Por qué cambia de color entre frascos?</summary>
+            <p>Porque es multifloral. Según las flores que abrieron esa temporada, puede salir más clara y suave o más
+              oscura e intensa. Las dos son la misma miel pura.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie" id="contacto">
+    <div class="contenedor pie__grid">
+      <div><img src="assets/img/logo-vertical.png" alt="Apicuevo, miel de abeja multifloral" width="400" height="260"
+          loading="lazy"></div>
+      <div>
+        <h4>Pedidos</h4>
+        <ul>
+          <!-- TODO (equipo): poner el número real de WhatsApp -->
+          <li><a href="https://wa.me/59170000000">WhatsApp +591 700 00000</a></li>
+          <li>Instagram y Facebook: @apicuevo</li>
+          <li>Cuevo, provincia Cordillera, Santa Cruz, Bolivia</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explora</h4>
+        <ul>
+          <li><a href="#miel">Nuestra miel</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#proceso">Cómo la hacemos</a></li>
+          <li><a href="#presentaciones">Presentaciones</a></li>
+        </ul>
+      </div>
+      <p class="pie__legal">© <span id="anio">2026</span> Apicuevo. Miel de abeja multifloral de Cuevo.</p>
     </div>
-    <div>
-      <h4>Explora</h4>
-      <ul>
-        <li><a href="#miel">Nuestra miel</a></li>
-        <li><a href="#historia">Historia</a></li>
-        <li><a href="#proceso">Cómo la hacemos</a></li>
-        <li><a href="#presentaciones">Presentaciones</a></li>
-      </ul>
-    </div>
-    <p class="pie__legal">© <span id="anio">2026</span> Apicuevo. Miel de abeja multifloral de Cuevo.</p>
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>
