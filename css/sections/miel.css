@@ -14,16 +14,32 @@
 .chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.1rem}
 .chip{font:600 .82rem var(--f-texto);padding:.45em .95em;border-radius:999px;border:2px solid var(--morado);background:none;color:var(--morado);cursor:pointer}
 .chip[aria-pressed="true"]{background:var(--morado);color:var(--crema)}
-.cal{overflow-x:auto}
-.cal__grilla{display:grid;grid-template-columns:130px repeat(9,minmax(32px,1fr));gap:6px 3px;align-items:center;min-width:480px;font-variant-numeric:tabular-nums}
+
+.cal__grilla{display:grid;gap:.6rem}
+.cal__fila{display:grid;grid-template-columns:120px 1fr;align-items:center;gap:.75rem}
+.cal__meses{display:grid;grid-template-columns:repeat(9,1fr);gap:3px}
 .cal__mes{font-size:.7rem;font-weight:600;color:var(--tierra);text-align:center}
-.cal__etiqueta{font-size:.88rem;font-weight:600;color:var(--morado);white-space:nowrap}
-.cal__celda{height:16px;border-radius:3px;background:rgb(75 29 74/.08)}
+.cal__etiqueta{font-size:.88rem;font-weight:600;color:var(--morado)}
+.cal__celda{height:18px;border-radius:4px;background:rgb(75 29 74/.08)}
 .cal__celda.on{background:var(--miel)}
 .cal__celda.cosecha{background:var(--tierra)}
 .cal .tenue{opacity:.25}
+
 .floracion__detalle{margin-top:1.1rem;padding-top:1rem;border-top:1px dashed rgb(75 29 74/.3);min-height:6.5rem}
 .floracion__detalle b{font-family:var(--f-titulo);color:var(--morado);font-size:1.1rem}
 .floracion__detalle p{margin:.25rem 0 0;font-size:.95rem;color:var(--tierra)}
 
-@media (max-width:860px){.miel__grid{grid-template-columns:1fr}}
+/* Responsive: siempre al final del archivo */
+@media (max-width:860px){
+  .miel__grid{grid-template-columns:minmax(0,1fr)}
+}
+
+@media (max-width:560px){
+  .floracion{padding:1.25rem 1rem}
+  .cal__grilla{gap:1rem}
+  .cal__fila{grid-template-columns:1fr;gap:.35rem}
+  .cal__fila--cabeza>span{display:none}
+  .cal__fila--cabeza{margin-bottom:-.4rem}
+  .cal__mes{font-size:.66rem}
+  .cal__celda{height:24px}
+}

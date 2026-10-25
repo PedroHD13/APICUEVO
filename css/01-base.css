@@ -15,3 +15,5 @@ section{padding-block:var(--espacio-seccion)}
   *,*::before,*::after{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
 }
+/* Evita que un hijo ancho (ej. el calendario) ensanche toda la columna en móvil */
+.hero__grid>*,.miel__grid>*,.historia__grid>*,.preguntas__grid>*{min-width:0}

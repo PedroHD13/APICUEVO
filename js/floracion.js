@@ -17,21 +17,22 @@
   const texto = document.getElementById("fTexto");
   if (!cal || !chips) return;
 
-  let html = "<span></span>" + meses.map((m) => `<span class="cal__mes">${m}</span>`).join("");
   const fila = (id, etiqueta, activos, extra = "") => {
-    html += `<span class="cal__etiqueta" data-fila="${id}">${etiqueta}</span>`;
-    meses.forEach((m, i) => {
-      html += `<span class="cal__celda${activos.includes(i) ? " on " + extra : ""}" data-fila="${id}" title="${etiqueta}: ${m}"></span>`;
-    });
+    const celdas = meses.map((m, i) =>
+      `<span class="cal__celda${activos.includes(i) ? " on " + extra : ""}" title="${etiqueta}: ${m}"></span>`
+    ).join("");
+    return `<div class="cal__fila" data-fila="${id}"><span class="cal__etiqueta">${etiqueta}</span><div class="cal__meses">${celdas}</div></div>`;
   };
+
+  let html = `<div class="cal__fila cal__fila--cabeza"><span></span><div class="cal__meses">${meses.map((m) => `<span class="cal__mes">${m}</span>`).join("")}</div></div>`;
   flores.forEach((f) => {
-    fila(f.id, f.nombre, f.on);
+    html += fila(f.id, f.nombre, f.on);
     const b = document.createElement("button");
     b.className = "chip"; b.type = "button"; b.dataset.f = f.id; b.textContent = f.nombre;
     b.setAttribute("aria-pressed", "false");
     chips.appendChild(b);
   });
-  fila("cosecha", "Cosecha", cosecha, "cosecha");
+  html += fila("cosecha", "Cosecha", cosecha, "cosecha");
   cal.innerHTML = html;
 
   chips.addEventListener("click", (e) => {
