@@ -1,12 +1,165 @@
-.tarjetas{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
-.tarjeta{background:#fff;border:1px solid rgb(75 29 74/.12);border-radius:20px;overflow:hidden}
-.tarjeta img{width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--crema-calida)}
-.tarjeta div{padding:1.25rem 1.25rem 1.4rem}
-.tarjeta h3{color:var(--morado);margin-bottom:.25rem}
-.tarjeta__medida{font-weight:600;color:var(--tierra);margin-bottom:.6rem}
-.tarjeta p{font-size:.95rem}
-.precio{font:800 1.6rem var(--f-titulo);color:var(--morado);margin:.75rem 0 0}
-.precio small{font-size:.8rem;font-family:var(--f-texto);font-weight:600}
-.nota{margin-top:1.5rem;font-size:.88rem;color:var(--tierra)}
-@media (max-width:860px){.tarjetas{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.tarjetas{grid-template-columns:1fr}}
+.presentaciones__titulo {
+    font-size: clamp(1.5rem, 3vw, 2.1rem)
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    max-width: 860px
+}
+
+.tarjeta {
+    background: #fff;
+    border: 1px solid rgb(75 29 74/.12);
+    border-radius: 16px;
+    overflow: hidden
+}
+
+.tarjeta img {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    background: var(--crema-calida)
+}
+
+.tarjeta div {
+    padding: .9rem 1rem 1.1rem
+}
+
+.tarjeta h3 {
+    color: var(--morado);
+    margin-bottom: .15rem;
+    font-size: 1.05rem
+}
+
+.tarjeta__medida {
+    font-weight: 600;
+    color: var(--tierra);
+    margin-bottom: .4rem;
+    font-size: .85rem
+}
+
+.tarjeta p {
+    font-size: .88rem
+}
+
+.precio {
+    font: 800 1.3rem var(--f-titulo);
+    color: var(--morado);
+    margin: .5rem 0 0
+}
+
+.precio small {
+    font-size: .75rem;
+    font-family: var(--f-texto);
+    font-weight: 600
+}
+
+.nota {
+    margin-top: 1rem;
+    font-size: .85rem;
+    color: var(--tierra)
+}
+
+/* Detalles de los frascos */
+.detalles {
+    margin-top: 2.5rem;
+    max-width: 860px
+}
+
+.detalles__titulo {
+    color: var(--morado);
+    font-size: 1.2rem;
+    margin-bottom: 1rem
+}
+
+.detalles__grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem
+}
+
+.detalles figure {
+    margin: 0
+}
+
+.detalles img {
+    width: 100%;
+    aspect-ratio: 414/484;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform .4s
+}
+
+.detalles figure:hover img {
+    transform: scale(1.03)
+}
+
+.detalles figcaption {
+    margin-top: .5rem;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--tierra);
+    text-align: center
+}
+
+/* Merch de la marca */
+.merch {
+    margin-top: 3rem
+}
+
+.merch__titulo {
+    color: var(--morado);
+    font-size: 1.2rem;
+    margin-bottom: 1rem
+}
+
+.merch__grilla {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem
+}
+
+.merch figure {
+    margin: 0
+}
+
+.merch img {
+    width: 100%;
+    aspect-ratio: 3/5;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform .4s
+}
+
+.merch figure:hover img {
+    transform: scale(1.03)
+}
+
+.merch figcaption {
+    margin-top: .5rem;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--tierra);
+    text-align: center
+}
+
+@media (max-width:860px) {
+    .tarjetas {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .merch__grilla {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media (max-width:560px) {
+
+    .tarjetas,
+    .detalles__grilla {
+        grid-template-columns: 1fr
+    }
+}
